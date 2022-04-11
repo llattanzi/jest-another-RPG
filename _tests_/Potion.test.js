@@ -1,7 +1,6 @@
-const { TestWatcher } = require('jest');
 const Potion = require('../lib/Potion.js');
 
-TestWatcher('creates a health potion object', () => {
+test('creates a health potion object', () => {
     const potion = new Potion('health');
 
     expect(potion.name).toBe('health');
